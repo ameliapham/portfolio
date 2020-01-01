@@ -1,0 +1,613 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:36.0px;color:rgb(241,147,22);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:36.0px;color:rgb(241,147,22);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(37,36,34);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:16.1px;color:rgb(37,36,34);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:10.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:10.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:15.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:15.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(102,102,102);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(102,102,102);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:14.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:14.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:48.0px;color:rgb(247,181,95);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:48.0px;color:rgb(247,181,95);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Times,serif;font-size:24.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Times,serif;font-size:24.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Times,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Times,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:16.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:16.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:12.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:12.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_013{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:8.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:8.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:"Algerian",serif;font-size:36.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:"Algerian",serif;font-size:36.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:120.1px;color:rgb(254,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:120.1px;color:rgb(254,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:80.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:80.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Times,serif;font-size:18.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Times,serif;font-size:18.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:18.1px;color:rgb(76,76,76);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:18.1px;color:rgb(76,76,76);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:36.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:36.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:28.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:28.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Times,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Times,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:72.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:72.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:20.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:30.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:30.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:48.0px;color:rgb(240,147,23);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:48.0px;color:rgb(240,147,23);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Times,serif;font-size:15.1px;color:rgb(250,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Times,serif;font-size:15.1px;color:rgb(250,253,254);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:30.1px;color:rgb(67,64,64);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:30.1px;color:rgb(67,64,64);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:18.1px;color:rgb(67,64,64);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:18.1px;color:rgb(67,64,64);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Times,serif;font-size:14.1px;color:rgb(240,147,26);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Times,serif;font-size:14.1px;color:rgb(240,147,26);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Times,serif;font-size:15.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Times,serif;font-size:15.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Times,serif;font-size:15.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Times,serif;font-size:15.1px;color:rgb(76,76,76);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:36.0px;color:rgb(37,36,34);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:36.0px;color:rgb(37,36,34);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:30.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:30.1px;color:rgb(43,42,41);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Times,serif;font-size:15.1px;color:rgb(102,102,102);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Times,serif;font-size:15.1px;color:rgb(102,102,102);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:36.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:36.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Times,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Times,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:36.0px;color:rgb(254,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Arial,serif;font-size:36.0px;color:rgb(254,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_050{font-family:Times,serif;font-size:15.1px;color:rgb(141,135,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_051{font-family:Times,serif;font-size:14.1px;color:rgb(141,135,133);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_051{font-family:Times,serif;font-size:14.1px;color:rgb(141,135,133);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_052{font-family:Arial,serif;font-size:24.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_052{font-family:Arial,serif;font-size:24.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_053{font-family:Arial,serif;font-size:14.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_053{font-family:Arial,serif;font-size:14.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_054{font-family:Times,serif;font-size:14.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_054{font-family:Times,serif;font-size:14.1px;color:rgb(141,135,133);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_055{font-family:Times,serif;font-size:14.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_055{font-family:Times,serif;font-size:14.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_056{font-family:Times,serif;font-size:72.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_056{font-family:Times,serif;font-size:72.0px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_057{font-family:Arial,serif;font-size:18.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_057{font-family:Arial,serif;font-size:18.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_058{font-family:Arial,serif;font-size:16.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_058{font-family:Arial,serif;font-size:16.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-309px;top:0px;width:619px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background01.jpg" width=619 height=865></div>
+<div style="position:absolute;left:175.07px;top:95.93px" class="cls_002"><span class="cls_002">PORTFOLIO</span></div>
+<div style="position:absolute;left:254.79px;top:200.08px" class="cls_003"><span class="cls_003">2014 -</span></div>
+<div style="position:absolute;left:320.38px;top:200.08px" class="cls_003"><span class="cls_003">2019</span></div>
+<div style="position:absolute;left:178.77px;top:653.58px" class="cls_004"><span class="cls_004">NAME</span></div>
+<div style="position:absolute;left:257.00px;top:650.12px" class="cls_005"><span class="cls_005">PHAM Ti Tu Huong</span></div>
+<div style="position:absolute;left:178.77px;top:680.18px" class="cls_004"><span class="cls_004">PHONE</span></div>
+<div style="position:absolute;left:257.00px;top:676.72px" class="cls_005"><span class="cls_005">+33 685683832</span></div>
+<div style="position:absolute;left:178.77px;top:702.91px" class="cls_004"><span class="cls_004">A D D R E S S</span><span class="cls_005">   Hanoi, Vietnam</span></div>
+<div style="position:absolute;left:178.77px;top:735.13px" class="cls_004"><span class="cls_004">MAIL</span></div>
+<div style="position:absolute;left:257.00px;top:731.67px" class="cls_005"><span class="cls_005">ptt.huong.8895@gmail.com</span></div>
+<div style="position:absolute;left:450.81px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:580.00px;top:826.54px" class="cls_006"><span class="cls_006">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:875px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background02.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:227.10px;top:65.66px" class="cls_009"><span class="cls_009">HELLO!</span></div>
+<div style="position:absolute;left:133.04px;top:127.15px" class="cls_010"><span class="cls_010">Glad you’re here. A little about me...</span></div>
+<div style="position:absolute;left:91.29px;top:195.93px" class="cls_011"><span class="cls_011">I am a recent graduate of the University of Sciences,</span></div>
+<div style="position:absolute;left:91.29px;top:225.93px" class="cls_011"><span class="cls_011">Socials, and Humanities where I earned my Licence</span></div>
+<div style="position:absolute;left:91.29px;top:255.93px" class="cls_011"><span class="cls_011">of International Studies.  I  have 1,5 years of work</span></div>
+<div style="position:absolute;left:91.29px;top:285.93px" class="cls_011"><span class="cls_011">experience as a Social Media Marketer for Kinergie</span></div>
+<div style="position:absolute;left:91.29px;top:315.93px" class="cls_011"><span class="cls_011">Studio and 5 years of freelance experience in design .</span></div>
+<div style="position:absolute;left:91.29px;top:345.93px" class="cls_011"><span class="cls_011">I’m currently studying in University of Montpellier in</span></div>
+<div style="position:absolute;left:91.29px;top:375.93px" class="cls_011"><span class="cls_011">order to improve my French.</span></div>
+<div style="position:absolute;left:91.29px;top:435.93px" class="cls_011"><span class="cls_011">Tis portfolio is about my professional experiences, my</span></div>
+<div style="position:absolute;left:91.29px;top:465.93px" class="cls_011"><span class="cls_011">activities I had taken part in and my projects I had done.</span></div>
+<div style="position:absolute;left:91.29px;top:495.93px" class="cls_011"><span class="cls_011">In addition, it’s about the life around me through my</span></div>
+<div style="position:absolute;left:91.29px;top:525.93px" class="cls_011"><span class="cls_011">lens.</span></div>
+<div style="position:absolute;left:91.29px;top:585.93px" class="cls_011"><span class="cls_011">Please feel free to scroll down in order to find out more</span></div>
+<div style="position:absolute;left:772.84px;top:594.52px" class="cls_008"><span class="cls_008">PH A M THI THU HUONG</span></div>
+<div style="position:absolute;left:91.29px;top:615.93px" class="cls_011"><span class="cls_011">about me and browse through examples of my academic</span></div>
+<div style="position:absolute;left:876.02px;top:629.93px" class="cls_012"><span class="cls_012">-------</span></div>
+<div style="position:absolute;left:91.29px;top:645.93px" class="cls_011"><span class="cls_011">and professional work.</span></div>
+<div style="position:absolute;left:770.11px;top:656.93px" class="cls_013"><span class="cls_013">“If you want to understand how a lion hunts,</span></div>
+<div style="position:absolute;left:797.62px;top:674.93px" class="cls_013"><span class="cls_013">don’t go to the zoo. Go to the jungle“</span></div>
+<div style="position:absolute;left:91.29px;top:705.93px" class="cls_011"><span class="cls_011">Tank you for taking the time to read my portfolio!</span></div>
+<div style="position:absolute;left:808.58px;top:711.06px" class="cls_014"><span class="cls_014">FROM</span><span class="cls_005">  James R. Stengel</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">2</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1175.28px;top:826.54px" class="cls_006"><span class="cls_006">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:1750px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background03.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:861.95px;top:158.52px" class="cls_015"><span class="cls_015">Table</span></div>
+<div style="position:absolute;left:897.51px;top:209.54px" class="cls_015"><span class="cls_015">of</span></div>
+<div style="position:absolute;left:843.33px;top:260.55px" class="cls_015"><span class="cls_015">Content</span></div>
+<div style="position:absolute;left:136.47px;top:228.41px" class="cls_016"><span class="cls_016">THINK</span></div>
+<div style="position:absolute;left:132.15px;top:314.45px" class="cls_016"><span class="cls_016">SMART</span></div>
+<div style="position:absolute;left:136.51px;top:423.60px" class="cls_017"><span class="cls_017">ANYTIMES</span></div>
+<div style="position:absolute;left:713.58px;top:573.50px" class="cls_019"><span class="cls_019">About me</span></div>
+<div style="position:absolute;left:881.28px;top:573.51px" class="cls_018"><span class="cls_018">06</span></div>
+<div style="position:absolute;left:960.76px;top:573.51px" class="cls_019"><span class="cls_019">Hobbies</span></div>
+<div style="position:absolute;left:1128.46px;top:573.51px" class="cls_018"><span class="cls_018">14</span></div>
+<div style="position:absolute;left:713.57px;top:619.77px" class="cls_019"><span class="cls_019">Professional work</span></div>
+<div style="position:absolute;left:881.28px;top:619.77px" class="cls_018"><span class="cls_018">08</span></div>
+<div style="position:absolute;left:960.75px;top:619.77px" class="cls_019"><span class="cls_019">Photo project 1</span></div>
+<div style="position:absolute;left:1128.46px;top:619.77px" class="cls_018"><span class="cls_018">16</span></div>
+<div style="position:absolute;left:713.57px;top:666.03px" class="cls_019"><span class="cls_019">Social activities</span></div>
+<div style="position:absolute;left:881.28px;top:666.03px" class="cls_018"><span class="cls_018">10</span></div>
+<div style="position:absolute;left:960.75px;top:666.03px" class="cls_019"><span class="cls_019">Photo project 2</span></div>
+<div style="position:absolute;left:1128.46px;top:666.03px" class="cls_018"><span class="cls_018">22</span></div>
+<div style="position:absolute;left:713.57px;top:712.29px" class="cls_019"><span class="cls_019">Graphic design</span></div>
+<div style="position:absolute;left:881.28px;top:712.30px" class="cls_018"><span class="cls_018">12</span></div>
+<div style="position:absolute;left:960.75px;top:712.29px" class="cls_019"><span class="cls_019">Photo project 3</span></div>
+<div style="position:absolute;left:1128.46px;top:712.30px" class="cls_018"><span class="cls_018">24</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">4</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1208.30px;top:777.54px" class="cls_006"><span class="cls_006">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:2576px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background04.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:242.32px;top:75.93px" class="cls_020"><span class="cls_020">ABOUT ME</span></div>
+<div style="position:absolute;left:94.21px;top:136.18px" class="cls_021"><span class="cls_021">NO. OF EVENTS</span></div>
+<div style="position:absolute;left:61.63px;top:148.18px" class="cls_021"><span class="cls_021">I</span></div>
+<div style="position:absolute;left:78.82px;top:148.18px" class="cls_021"><span class="cls_021">HAVE TAKEN PART IN:</span></div>
+<div style="position:absolute;left:377.19px;top:160.19px" class="cls_021"><span class="cls_021">NO. OF PARTNER BR ANDS</span></div>
+<div style="position:absolute;left:392.27px;top:172.19px" class="cls_021"><span class="cls_021">I HAVE COOPER ATED:</span></div>
+<div style="position:absolute;left:274.15px;top:192.36px" class="cls_021"><span class="cls_021">CREATING</span></div>
+<div style="position:absolute;left:267.82px;top:204.36px" class="cls_021"><span class="cls_021">MORE THAN</span></div>
+<div style="position:absolute;left:117.83px;top:185.11px" class="cls_022"><span class="cls_022">228</span></div>
+<div style="position:absolute;left:448.12px;top:209.11px" class="cls_022"><span class="cls_022">26</span></div>
+<div style="position:absolute;left:267.92px;top:239.36px" class="cls_022"><span class="cls_022">105</span></div>
+<div style="position:absolute;left:94.21px;top:270.11px" class="cls_021"><span class="cls_021">NO. OF EVENTS</span></div>
+<div style="position:absolute;left:75.43px;top:282.11px" class="cls_021"><span class="cls_021">I</span></div>
+<div style="position:absolute;left:92.62px;top:282.11px" class="cls_021"><span class="cls_021">HAVE ORGANIZED:</span></div>
+<div style="position:absolute;left:287.70px;top:300.36px" class="cls_021"><span class="cls_021">MEDIA</span></div>
+<div style="position:absolute;left:275.45px;top:312.36px" class="cls_021"><span class="cls_021">PUBLICA-</span></div>
+<div style="position:absolute;left:287.91px;top:324.36px" class="cls_021"><span class="cls_021">TIONS</span></div>
+<div style="position:absolute;left:128.27px;top:317.11px" class="cls_022"><span class="cls_022">52</span></div>
+<div style="position:absolute;left:200.39px;top:409.11px" class="cls_023"><span class="cls_023">SOME INTERESTING</span></div>
+<div style="position:absolute;left:280.50px;top:445.12px" class="cls_023"><span class="cls_023">FACTS</span></div>
+<div style="position:absolute;left:542.65px;top:485.34px" class="cls_024"><span class="cls_024">2</span></div>
+<div style="position:absolute;left:483.46px;top:498.34px" class="cls_021"><span class="cls_021">OWNING</span></div>
+<div style="position:absolute;left:90.34px;top:491.11px" class="cls_024"><span class="cls_024">4K</span></div>
+<div style="position:absolute;left:486.29px;top:510.34px" class="cls_021"><span class="cls_021">GROWING</span></div>
+<div style="position:absolute;left:65.13px;top:516.11px" class="cls_021"><span class="cls_021">FOLLOWERS</span></div>
+<div style="position:absolute;left:244.88px;top:503.11px" class="cls_024"><span class="cls_024">[2014 - 2019]</span></div>
+<div style="position:absolute;left:483.91px;top:522.34px" class="cls_021"><span class="cls_021">WEBSITES</span></div>
+<div style="position:absolute;left:62.31px;top:528.11px" class="cls_021"><span class="cls_021">ON FANPAGE</span></div>
+<div style="position:absolute;left:64.49px;top:569.01px" class="cls_025"><span class="cls_025">“Climb  the mountain not so the world can see you, but so you can see the world” - David McCullough</span></div>
+<div style="position:absolute;left:474.13px;top:624.81px" class="cls_026"><span class="cls_026">PHOTO</span></div>
+<div style="position:absolute;left:115.71px;top:633.11px" class="cls_026"><span class="cls_026">Having taught</span></div>
+<div style="position:absolute;left:458.27px;top:642.82px" class="cls_026"><span class="cls_026">PROJECTS</span></div>
+<div style="position:absolute;left:238.05px;top:645.11px" class="cls_026"><span class="cls_026">Having</span></div>
+<div style="position:absolute;left:371.91px;top:587.11px" class="cls_029"><span class="cls_029">3</span></div>
+<div style="position:absolute;left:59.36px;top:651.11px" class="cls_026"><span class="cls_026">Literature and English in</span></div>
+<div style="position:absolute;left:237.78px;top:663.11px" class="cls_026"><span class="cls_026">arrived</span></div>
+<div style="position:absolute;left:65.22px;top:663.11px" class="cls_027"><span class="cls_027">3</span><span class="cls_026"> centers, responsible</span></div>
+<div style="position:absolute;left:234.44px;top:675.11px" class="cls_026"><span class="cls_026">over</span><span class="cls_028"> </span><span class="cls_027">20</span></div>
+<div style="position:absolute;left:66.45px;top:681.11px" class="cls_026"><span class="cls_026">for about </span><span class="cls_027">50</span><span class="cls_026"> children</span></div>
+<div style="position:absolute;left:227.26px;top:699.11px" class="cls_026"><span class="cls_026">new areas,</span></div>
+<div style="position:absolute;left:454.43px;top:710.81px" class="cls_030"><span class="cls_030">WITH</span></div>
+<div style="position:absolute;left:493.03px;top:695.81px" class="cls_032"><span class="cls_032">1030</span></div>
+<div style="position:absolute;left:231.18px;top:717.11px" class="cls_026"><span class="cls_026">including</span></div>
+<div style="position:absolute;left:475.08px;top:729.81px" class="cls_026"><span class="cls_026">SHOTS</span></div>
+<div style="position:absolute;left:236.02px;top:729.11px" class="cls_027"><span class="cls_027">5</span><span class="cls_028"> </span><span class="cls_026">times</span></div>
+<div style="position:absolute;left:237.63px;top:753.11px" class="cls_026"><span class="cls_026">abroad</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">6</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1175.28px;top:826.54px" class="cls_006"><span class="cls_006">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:3451px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background05.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:816.12px;top:70.03px" class="cls_033"><span class="cls_033">MY DUTIES</span></div>
+<div style="position:absolute;left:753.18px;top:133.03px" class="cls_034"><span class="cls_034">I started working in Kinergie Studio from August 2018 as a</span></div>
+<div style="position:absolute;left:739.85px;top:153.02px" class="cls_034"><span class="cls_034">Management Assistant., then become a Social Media Marketer.</span></div>
+<div style="position:absolute;left:866.60px;top:173.02px" class="cls_034"><span class="cls_034">My main duties are...</span></div>
+<div style="position:absolute;left:149.10px;top:165.97px" class="cls_035"><span class="cls_035">SOCIAL MEDIA MARKETER</span></div>
+<div style="position:absolute;left:253.61px;top:204.29px" class="cls_036"><span class="cls_036">- Kinergie Studio -</span></div>
+<div style="position:absolute;left:1025.58px;top:228.86px" class="cls_037"><span class="cls_037">OVERSEE OPERATIONS</span></div>
+<div style="position:absolute;left:681.13px;top:231.45px" class="cls_037"><span class="cls_037">COMMUNICATION</span></div>
+<div style="position:absolute;left:681.09px;top:251.71px" class="cls_039"><span class="cls_039">Meeting and working</span></div>
+<div style="position:absolute;left:1025.55px;top:249.12px" class="cls_039"><span class="cls_039">Arranging the working</span></div>
+<div style="position:absolute;left:137.08px;top:258.84px" class="cls_037"><span class="cls_037">About Kinergie Studio</span></div>
+<div style="position:absolute;left:681.09px;top:266.71px" class="cls_039"><span class="cls_039">directly with artists and</span></div>
+<div style="position:absolute;left:1025.55px;top:264.12px" class="cls_039"><span class="cls_039">schedule  and  planning</span></div>
+<div style="position:absolute;left:681.09px;top:281.71px" class="cls_039"><span class="cls_039">partners.   Fundraising</span></div>
+<div style="position:absolute;left:1025.55px;top:279.12px" class="cls_039"><span class="cls_039">in   organizing   various</span></div>
+<div style="position:absolute;left:137.08px;top:292.84px" class="cls_040"><span class="cls_040">Kinergie is known as the only contemporary and ballet</span></div>
+<div style="position:absolute;left:1025.55px;top:294.12px" class="cls_039"><span class="cls_039">projects.</span></div>
+<div style="position:absolute;left:681.09px;top:296.71px" class="cls_039"><span class="cls_039">from    sponsor    and</span></div>
+<div style="position:absolute;left:137.08px;top:309.84px" class="cls_040"><span class="cls_040">creation space in Hanoi with the purpose of conveying artistic</span></div>
+<div style="position:absolute;left:681.09px;top:311.71px" class="cls_039"><span class="cls_039">community.</span></div>
+<div style="position:absolute;left:137.08px;top:326.83px" class="cls_040"><span class="cls_040">inspiration and developing  Vietnam art-loving community</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:681.13px;top:347.27px" class="cls_037"><span class="cls_037">DESIGNER</span></div>
+<div style="position:absolute;left:1025.58px;top:358.83px" class="cls_037"><span class="cls_037">DATA ANALYTICS</span></div>
+<div style="position:absolute;left:681.13px;top:364.07px" class="cls_037"><span class="cls_037">AND PHOTOGHAPHER</span></div>
+<div style="position:absolute;left:681.09px;top:381.71px" class="cls_039"><span class="cls_039">Designing</span></div>
+<div style="position:absolute;left:775.77px;top:381.71px" class="cls_039"><span class="cls_039">posters,</span></div>
+<div style="position:absolute;left:1025.55px;top:379.10px" class="cls_039"><span class="cls_039">Employing   marketing</span></div>
+<div style="position:absolute;left:681.09px;top:396.71px" class="cls_039"><span class="cls_039">banners promoted the</span></div>
+<div style="position:absolute;left:1025.55px;top:394.10px" class="cls_039"><span class="cls_039">analytic</span></div>
+<div style="position:absolute;left:1108.61px;top:394.10px" class="cls_039"><span class="cls_039">techniques</span></div>
+<div style="position:absolute;left:330.61px;top:402.51px" class="cls_037"><span class="cls_037">WORKSHOPS AND PERFORM PROJECTS</span></div>
+<div style="position:absolute;left:681.09px;top:411.71px" class="cls_039"><span class="cls_039">events and new classes.</span></div>
+<div style="position:absolute;left:1025.55px;top:409.10px" class="cls_039"><span class="cls_039">to  gather  data</span></div>
+<div style="position:absolute;left:1135.55px;top:409.10px" class="cls_039"><span class="cls_039">(social</span></div>
+<div style="position:absolute;left:330.61px;top:423.99px" class="cls_040"><span class="cls_040">We   provide   the   space   and   creative</span></div>
+<div style="position:absolute;left:1025.55px;top:424.10px" class="cls_039"><span class="cls_039">media,   web</span></div>
+<div style="position:absolute;left:1116.59px;top:424.10px" class="cls_039"><span class="cls_039">analytics,</span></div>
+<div style="position:absolute;left:681.09px;top:426.71px" class="cls_039"><span class="cls_039">Taking</span></div>
+<div style="position:absolute;left:763.16px;top:426.71px" class="cls_039"><span class="cls_039">moments’</span></div>
+<div style="position:absolute;left:330.61px;top:439.39px" class="cls_040"><span class="cls_040">conditions   for   artists.   Trough   the</span></div>
+<div style="position:absolute;left:681.09px;top:441.71px" class="cls_039"><span class="cls_039">pictures  and  creating</span></div>
+<div style="position:absolute;left:1025.55px;top:439.10px" class="cls_039"><span class="cls_039">rankings)</span></div>
+<div style="position:absolute;left:330.61px;top:454.77px" class="cls_040"><span class="cls_040">workshops  and  performances,  we  push</span></div>
+<div style="position:absolute;left:681.09px;top:456.71px" class="cls_039"><span class="cls_039">content online on the</span></div>
+<div style="position:absolute;left:1025.55px;top:454.10px" class="cls_039"><span class="cls_039">Creating</span></div>
+<div style="position:absolute;left:1115.70px;top:454.10px" class="cls_039"><span class="cls_039">statistical</span></div>
+<div style="position:absolute;left:330.61px;top:470.17px" class="cls_040"><span class="cls_040">ballet and contemporary art closer to the</span></div>
+<div style="position:absolute;left:681.09px;top:471.71px" class="cls_039"><span class="cls_039">website.</span></div>
+<div style="position:absolute;left:1025.55px;top:469.10px" class="cls_039"><span class="cls_039">reports.</span></div>
+<div style="position:absolute;left:330.61px;top:485.55px" class="cls_040"><span class="cls_040">public, as well as connect artists and the</span></div>
+<div style="position:absolute;left:330.61px;top:500.95px" class="cls_040"><span class="cls_040">art-loving community.</span></div>
+<div style="position:absolute;left:854.59px;top:501.83px" class="cls_037"><span class="cls_037">CLASSES MANAGEMENT</span></div>
+<div style="position:absolute;left:854.55px;top:522.10px" class="cls_039"><span class="cls_039">Arranging   the   classes</span></div>
+<div style="position:absolute;left:854.55px;top:537.10px" class="cls_039"><span class="cls_039">schedule.</span></div>
+<div style="position:absolute;left:854.55px;top:552.10px" class="cls_039"><span class="cls_039">Meeting   directly   with</span></div>
+<div style="position:absolute;left:854.55px;top:567.10px" class="cls_039"><span class="cls_039">students  and  receiving</span></div>
+<div style="position:absolute;left:854.55px;top:582.10px" class="cls_039"><span class="cls_039">feedback to improve the</span></div>
+<div style="position:absolute;left:330.61px;top:599.57px" class="cls_037"><span class="cls_037">BALLET AND CONTEMPORARY CLASSES</span></div>
+<div style="position:absolute;left:854.55px;top:597.10px" class="cls_039"><span class="cls_039">quality of teaching.</span></div>
+<div style="position:absolute;left:330.61px;top:620.93px" class="cls_040"><span class="cls_040">In addition to the classroom for children</span></div>
+<div style="position:absolute;left:854.59px;top:628.27px" class="cls_037"><span class="cls_037">BEING A PART</span></div>
+<div style="position:absolute;left:330.61px;top:636.56px" class="cls_040"><span class="cls_040">and adults, 40% of our classes are for people</span></div>
+<div style="position:absolute;left:854.59px;top:645.07px" class="cls_037"><span class="cls_037">OF STUDIO</span></div>
+<div style="position:absolute;left:330.61px;top:652.19px" class="cls_040"><span class="cls_040">from middle-aged - the age at which they</span></div>
+<div style="position:absolute;left:330.61px;top:667.82px" class="cls_040"><span class="cls_040">will be rejected by all the dance schools. It’s</span></div>
+<div style="position:absolute;left:854.55px;top:666.10px" class="cls_039"><span class="cls_039">As  a  student of the</span></div>
+<div style="position:absolute;left:330.61px;top:683.45px" class="cls_040"><span class="cls_040">not fair for art lovers to be treated like that</span></div>
+<div style="position:absolute;left:854.55px;top:681.10px" class="cls_039"><span class="cls_039">studio,   I   assess   the</span></div>
+<div style="position:absolute;left:854.55px;top:696.10px" class="cls_039"><span class="cls_039">quality from the student</span></div>
+<div style="position:absolute;left:330.61px;top:699.08px" class="cls_040"><span class="cls_040">just because circumstances do not allow</span></div>
+<div style="position:absolute;left:854.55px;top:711.10px" class="cls_039"><span class="cls_039">perspective.</span></div>
+<div style="position:absolute;left:330.61px;top:714.71px" class="cls_040"><span class="cls_040">them to approach the arts early. So we help</span></div>
+<div style="position:absolute;left:330.61px;top:730.34px" class="cls_040"><span class="cls_040">them to solve this problem by our special</span></div>
+<div style="position:absolute;left:330.61px;top:745.97px" class="cls_040"><span class="cls_040">classes</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">8</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1208.30px;top:777.54px" class="cls_006"><span class="cls_006">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:4277px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background06.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:170.01px;top:39.49px" class="cls_041"><span class="cls_041">SOCIAL ACTIVITIES</span></div>
+<div style="position:absolute;left:46.50px;top:114.93px" class="cls_040"><span class="cls_040">I have taken part in and organized a</span></div>
+<div style="position:absolute;left:336.00px;top:117.00px" class="cls_040"><span class="cls_040">We have also organized extracurricular</span></div>
+<div style="position:absolute;left:46.50px;top:132.93px" class="cls_040"><span class="cls_040">lot  of  activities.  Most  of  them  were</span></div>
+<div style="position:absolute;left:336.00px;top:135.00px" class="cls_040"><span class="cls_040">activities, created a playground to seek</span></div>
+<div style="position:absolute;left:46.50px;top:150.93px" class="cls_040"><span class="cls_040">belong  to  the  university’s  clubs  and</span></div>
+<div style="position:absolute;left:336.00px;top:153.00px" class="cls_040"><span class="cls_040">and develop talents in student community,</span></div>
+<div style="position:absolute;left:46.50px;top:168.93px" class="cls_040"><span class="cls_040">social organizations. We organized the</span></div>
+<div style="position:absolute;left:336.00px;top:171.00px" class="cls_040"><span class="cls_040">as well as create cultural and academic</span></div>
+<div style="position:absolute;left:46.50px;top:186.93px" class="cls_040"><span class="cls_040">academic seminars in order to supply the</span></div>
+<div style="position:absolute;left:336.00px;top:189.00px" class="cls_040"><span class="cls_040">exchanges between Vietnamese students</span></div>
+<div style="position:absolute;left:46.50px;top:204.93px" class="cls_040"><span class="cls_040">knowledge for the students.</span></div>
+<div style="position:absolute;left:336.00px;top:207.00px" class="cls_040"><span class="cls_040">and international students.</span></div>
+<div style="position:absolute;left:860.17px;top:344.13px" class="cls_042"><span class="cls_042">Volunteer</span></div>
+<div style="position:absolute;left:706.20px;top:650.57px" class="cls_043"><span class="cls_043">I was a volunteer caring for  blood cancer children at the hospital’s library.</span></div>
+<div style="position:absolute;left:767.93px;top:668.57px" class="cls_043"><span class="cls_043">I taught them reading, painting and playing the piano.</span></div>
+<div style="position:absolute;left:706.20px;top:686.57px" class="cls_043"><span class="cls_043">In addition, I was a volunteer in volunteer clubs.  We raised funds, called for</span></div>
+<div style="position:absolute;left:777.42px;top:704.57px" class="cls_043"><span class="cls_043">donations of clothes, books, and foods for the poor</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">10</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1201.58px;top:777.54px" class="cls_006"><span class="cls_006">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:5103px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background07.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:688.85px;top:94.61px" class="cls_044"><span class="cls_044">GRAPHIC</span></div>
+<div style="position:absolute;left:701.55px;top:138.60px" class="cls_044"><span class="cls_044">DESIGN</span></div>
+<div style="position:absolute;left:315.56px;top:267.93px" class="cls_025"><span class="cls_025">GENER AL</span></div>
+<div style="position:absolute;left:315.56px;top:281.93px" class="cls_025"><span class="cls_025">PROJECT:</span></div>
+<div style="position:absolute;left:315.56px;top:296.93px" class="cls_046"><span class="cls_046">Project   included</span></div>
+<div style="position:absolute;left:315.56px;top:308.93px" class="cls_046"><span class="cls_046">many</span></div>
+<div style="position:absolute;left:379.81px;top:308.93px" class="cls_046"><span class="cls_046">posters,</span></div>
+<div style="position:absolute;left:315.56px;top:320.93px" class="cls_046"><span class="cls_046">invitations,</span></div>
+<div style="position:absolute;left:822.56px;top:328.93px" class="cls_048"><span class="cls_048">PROJECT:</span></div>
+<div style="position:absolute;left:315.56px;top:332.93px" class="cls_046"><span class="cls_046">avatars, covers  in</span></div>
+<div style="position:absolute;left:315.56px;top:344.93px" class="cls_046"><span class="cls_046">order to advertise</span></div>
+<div style="position:absolute;left:831.10px;top:348.93px" class="cls_048"><span class="cls_048">5 Y EA RS</span></div>
+<div style="position:absolute;left:315.56px;top:356.93px" class="cls_046"><span class="cls_046">clubs   via   social</span></div>
+<div style="position:absolute;left:783.60px;top:362.93px" class="cls_048"><span class="cls_048">A NNI V ERSA RY</span></div>
+<div style="position:absolute;left:315.56px;top:368.93px" class="cls_046"><span class="cls_046">network</span></div>
+<div style="position:absolute;left:834.94px;top:376.93px" class="cls_048"><span class="cls_048">OF MCC</span></div>
+<div style="position:absolute;left:774.52px;top:392.93px" class="cls_046"><span class="cls_046">Tose</span></div>
+<div style="position:absolute;left:841.85px;top:392.93px" class="cls_046"><span class="cls_046">graphics</span></div>
+<div style="position:absolute;left:774.52px;top:404.93px" class="cls_046"><span class="cls_046">included</span></div>
+<div style="position:absolute;left:852.56px;top:404.93px" class="cls_046"><span class="cls_046">poster,</span></div>
+<div style="position:absolute;left:774.52px;top:416.93px" class="cls_046"><span class="cls_046">invitation,    avatar</span></div>
+<div style="position:absolute;left:774.52px;top:428.93px" class="cls_046"><span class="cls_046">and logo in order to</span></div>
+<div style="position:absolute;left:774.52px;top:440.93px" class="cls_046"><span class="cls_046">advertise that event</span></div>
+<div style="position:absolute;left:783.09px;top:452.93px" class="cls_046"><span class="cls_046">via social network</span></div>
+<div style="position:absolute;left:218.56px;top:484.93px" class="cls_048"><span class="cls_048">PROJECT:</span></div>
+<div style="position:absolute;left:173.08px;top:504.93px" class="cls_048"><span class="cls_048">MC SPA R K LING</span></div>
+<div style="position:absolute;left:167.24px;top:518.93px" class="cls_046"><span class="cls_046">Tose</span></div>
+<div style="position:absolute;left:237.85px;top:518.93px" class="cls_046"><span class="cls_046">graphics</span></div>
+<div style="position:absolute;left:167.24px;top:530.93px" class="cls_046"><span class="cls_046">included</span></div>
+<div style="position:absolute;left:248.56px;top:530.93px" class="cls_046"><span class="cls_046">poster,</span></div>
+<div style="position:absolute;left:167.24px;top:542.93px" class="cls_046"><span class="cls_046">invitation,</span></div>
+<div style="position:absolute;left:249.17px;top:542.93px" class="cls_046"><span class="cls_046">avatar,</span></div>
+<div style="position:absolute;left:167.24px;top:554.93px" class="cls_046"><span class="cls_046">ect.   in   order   to</span></div>
+<div style="position:absolute;left:167.24px;top:566.93px" class="cls_046"><span class="cls_046">advertise that event</span></div>
+<div style="position:absolute;left:167.24px;top:578.93px" class="cls_046"><span class="cls_046">via social      network</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">12</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1168.56px;top:826.54px" class="cls_006"><span class="cls_006">13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:5978px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background08.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:242.32px;top:75.93px" class="cls_020"><span class="cls_020">ABOUT ME</span></div>
+<div style="position:absolute;left:94.21px;top:136.18px" class="cls_021"><span class="cls_021">NO. OF EVENTS</span></div>
+<div style="position:absolute;left:61.63px;top:148.18px" class="cls_021"><span class="cls_021">I</span></div>
+<div style="position:absolute;left:78.82px;top:148.18px" class="cls_021"><span class="cls_021">HAVE TAKEN PART IN:</span></div>
+<div style="position:absolute;left:377.19px;top:160.19px" class="cls_021"><span class="cls_021">NO. OF PARTNER BR ANDS</span></div>
+<div style="position:absolute;left:392.27px;top:172.19px" class="cls_021"><span class="cls_021">I HAVE COOPER ATED:</span></div>
+<div style="position:absolute;left:274.15px;top:192.36px" class="cls_021"><span class="cls_021">CREATING</span></div>
+<div style="position:absolute;left:267.82px;top:204.36px" class="cls_021"><span class="cls_021">MORE THAN</span></div>
+<div style="position:absolute;left:117.83px;top:185.11px" class="cls_022"><span class="cls_022">228</span></div>
+<div style="position:absolute;left:448.12px;top:209.11px" class="cls_022"><span class="cls_022">26</span></div>
+<div style="position:absolute;left:267.92px;top:239.36px" class="cls_022"><span class="cls_022">105</span></div>
+<div style="position:absolute;left:94.21px;top:270.11px" class="cls_021"><span class="cls_021">NO. OF EVENTS</span></div>
+<div style="position:absolute;left:75.43px;top:282.11px" class="cls_021"><span class="cls_021">I</span></div>
+<div style="position:absolute;left:92.62px;top:282.11px" class="cls_021"><span class="cls_021">HAVE ORGANIZED:</span></div>
+<div style="position:absolute;left:287.70px;top:300.36px" class="cls_021"><span class="cls_021">MEDIA</span></div>
+<div style="position:absolute;left:275.45px;top:312.36px" class="cls_021"><span class="cls_021">PUBLICA-</span></div>
+<div style="position:absolute;left:287.91px;top:324.36px" class="cls_021"><span class="cls_021">TIONS</span></div>
+<div style="position:absolute;left:128.27px;top:317.11px" class="cls_022"><span class="cls_022">52</span></div>
+<div style="position:absolute;left:200.39px;top:409.11px" class="cls_023"><span class="cls_023">SOME INTERESTING</span></div>
+<div style="position:absolute;left:280.50px;top:445.12px" class="cls_023"><span class="cls_023">FACTS</span></div>
+<div style="position:absolute;left:542.65px;top:485.34px" class="cls_024"><span class="cls_024">2</span></div>
+<div style="position:absolute;left:483.46px;top:498.34px" class="cls_021"><span class="cls_021">OWNING</span></div>
+<div style="position:absolute;left:90.34px;top:491.11px" class="cls_024"><span class="cls_024">4K</span></div>
+<div style="position:absolute;left:486.29px;top:510.34px" class="cls_021"><span class="cls_021">GROWING</span></div>
+<div style="position:absolute;left:65.13px;top:516.11px" class="cls_021"><span class="cls_021">FOLLOWERS</span></div>
+<div style="position:absolute;left:244.88px;top:503.11px" class="cls_024"><span class="cls_024">[2014 - 2019]</span></div>
+<div style="position:absolute;left:483.91px;top:522.34px" class="cls_021"><span class="cls_021">WEBSITES</span></div>
+<div style="position:absolute;left:62.31px;top:528.11px" class="cls_021"><span class="cls_021">ON FANPAGE</span></div>
+<div style="position:absolute;left:64.49px;top:569.01px" class="cls_025"><span class="cls_025">“Climb  the mountain not so the world can see you, but so you can see the world” - David McCullough</span></div>
+<div style="position:absolute;left:474.13px;top:624.81px" class="cls_026"><span class="cls_026">PHOTO</span></div>
+<div style="position:absolute;left:115.71px;top:633.11px" class="cls_026"><span class="cls_026">Having taught</span></div>
+<div style="position:absolute;left:458.27px;top:642.82px" class="cls_026"><span class="cls_026">PROJECTS</span></div>
+<div style="position:absolute;left:238.05px;top:645.11px" class="cls_026"><span class="cls_026">Having</span></div>
+<div style="position:absolute;left:371.91px;top:587.11px" class="cls_029"><span class="cls_029">3</span></div>
+<div style="position:absolute;left:59.36px;top:651.11px" class="cls_026"><span class="cls_026">Literature and English in</span></div>
+<div style="position:absolute;left:237.78px;top:663.11px" class="cls_026"><span class="cls_026">arrived</span></div>
+<div style="position:absolute;left:65.22px;top:663.11px" class="cls_027"><span class="cls_027">3</span><span class="cls_026"> centers, responsible</span></div>
+<div style="position:absolute;left:234.44px;top:675.11px" class="cls_026"><span class="cls_026">over</span><span class="cls_028"> </span><span class="cls_027">20</span></div>
+<div style="position:absolute;left:66.45px;top:681.11px" class="cls_026"><span class="cls_026">for about </span><span class="cls_027">50</span><span class="cls_026"> children</span></div>
+<div style="position:absolute;left:227.26px;top:699.11px" class="cls_026"><span class="cls_026">new areas,</span></div>
+<div style="position:absolute;left:454.43px;top:710.81px" class="cls_030"><span class="cls_030">WITH</span></div>
+<div style="position:absolute;left:493.03px;top:695.81px" class="cls_032"><span class="cls_032">1030</span></div>
+<div style="position:absolute;left:231.18px;top:717.11px" class="cls_026"><span class="cls_026">including</span></div>
+<div style="position:absolute;left:475.08px;top:729.81px" class="cls_026"><span class="cls_026">SHOTS</span></div>
+<div style="position:absolute;left:236.02px;top:729.11px" class="cls_027"><span class="cls_027">5</span><span class="cls_028"> </span><span class="cls_026">times</span></div>
+<div style="position:absolute;left:237.63px;top:753.11px" class="cls_026"><span class="cls_026">abroad</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">14</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1168.56px;top:826.54px" class="cls_006"><span class="cls_006">15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:6853px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background09.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:58.14px;top:46.83px" class="cls_049"><span class="cls_049">AND...</span></div>
+<div style="position:absolute;left:879.75px;top:90.53px" class="cls_050"><span class="cls_050">Guitar lover</span></div>
+<div style="position:absolute;left:58.14px;top:90.83px" class="cls_049"><span class="cls_049">A MILLION</span></div>
+<div style="position:absolute;left:58.14px;top:134.82px" class="cls_049"><span class="cls_049">THINGS ABOUT</span></div>
+<div style="position:absolute;left:58.14px;top:178.81px" class="cls_049"><span class="cls_049">ME</span></div>
+<div style="position:absolute;left:1036.50px;top:253.03px" class="cls_050"><span class="cls_050">Cat lover</span></div>
+<div style="position:absolute;left:248.00px;top:291.53px" class="cls_050"><span class="cls_050">Mask drawing</span></div>
+<div style="position:absolute;left:248.00px;top:309.53px" class="cls_050"><span class="cls_050">and DIY</span></div>
+<div style="position:absolute;left:415.00px;top:383.03px" class="cls_050"><span class="cls_050">Cooking</span></div>
+<div style="position:absolute;left:45.50px;top:713.83px" class="cls_051"><span class="cls_051">Travel lover</span></div>
+<div style="position:absolute;left:802.50px;top:733.03px" class="cls_050"><span class="cls_050">Ballet lover</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">16</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1201.58px;top:777.54px" class="cls_006"><span class="cls_006">17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:7679px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background10.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:57.14px;top:52.98px" class="cls_052"><span class="cls_052">Project 1</span></div>
+<div style="position:absolute;left:372.50px;top:60.03px" class="cls_046"><span class="cls_046">Chinese   architecture   always</span></div>
+<div style="position:absolute;left:579.00px;top:60.03px" class="cls_046"><span class="cls_046">With the sensible policies from</span></div>
+<div style="position:absolute;left:372.50px;top:78.03px" class="cls_046"><span class="cls_046">makes us curious and interested.</span></div>
+<div style="position:absolute;left:579.00px;top:78.03px" class="cls_046"><span class="cls_046">the government, citadels and the</span></div>
+<div style="position:absolute;left:372.50px;top:96.03px" class="cls_046"><span class="cls_046">Te   Chinese   preserve   well</span></div>
+<div style="position:absolute;left:579.00px;top:96.03px" class="cls_046"><span class="cls_046">ancient houses are preserved</span></div>
+<div style="position:absolute;left:57.14px;top:84.98px" class="cls_044"><span class="cls_044">CHINESE</span></div>
+<div style="position:absolute;left:372.50px;top:114.03px" class="cls_046"><span class="cls_046">their ancient architecture. It’s</span></div>
+<div style="position:absolute;left:579.00px;top:114.03px" class="cls_046"><span class="cls_046">and used as souvenir shops and</span></div>
+<div style="position:absolute;left:372.50px;top:132.03px" class="cls_046"><span class="cls_046">interesting that the preservation</span></div>
+<div style="position:absolute;left:579.00px;top:132.03px" class="cls_046"><span class="cls_046">homestays for tourists.</span></div>
+<div style="position:absolute;left:57.14px;top:128.97px" class="cls_044"><span class="cls_044">TRADITIONAL</span></div>
+<div style="position:absolute;left:372.50px;top:150.03px" class="cls_046"><span class="cls_046">of these monuments extremely</span></div>
+<div style="position:absolute;left:579.00px;top:159.03px" class="cls_046"><span class="cls_046">Moreover,   some   apartment</span></div>
+<div style="position:absolute;left:372.50px;top:168.03px" class="cls_046"><span class="cls_046">perfects,   serves   totally   for</span></div>
+<div style="position:absolute;left:579.00px;top:177.03px" class="cls_046"><span class="cls_046">blocks are gradually being built</span></div>
+<div style="position:absolute;left:372.50px;top:186.03px" class="cls_046"><span class="cls_046">the purpose of preserving the</span></div>
+<div style="position:absolute;left:57.14px;top:172.96px" class="cls_044"><span class="cls_044">LIFE</span></div>
+<div style="position:absolute;left:579.00px;top:195.03px" class="cls_046"><span class="cls_046">in the vicinity in order to solve</span></div>
+<div style="position:absolute;left:372.50px;top:204.03px" class="cls_046"><span class="cls_046">culture  and  comes  from  the</span></div>
+<div style="position:absolute;left:579.00px;top:213.03px" class="cls_046"><span class="cls_046">population problems.</span></div>
+<div style="position:absolute;left:372.50px;top:222.03px" class="cls_046"><span class="cls_046">determination of local people.</span></div>
+<div style="position:absolute;left:57.14px;top:228.93px" class="cls_039"><span class="cls_039">Te project I have nurtured and performed</span></div>
+<div style="position:absolute;left:1011.00px;top:231.82px" class="cls_053"><span class="cls_053">portfolio.</span></div>
+<div style="position:absolute;left:57.14px;top:246.93px" class="cls_039"><span class="cls_039">during 4 years with 4 times to China’s</span></div>
+<div style="position:absolute;left:57.14px;top:264.93px" class="cls_039"><span class="cls_039">Sounth  provinces.  Te  project  focuse</span></div>
+<div style="position:absolute;left:57.14px;top:282.93px" class="cls_039"><span class="cls_039">on exploiting the general aspects of the</span></div>
+<div style="position:absolute;left:57.14px;top:300.93px" class="cls_039"><span class="cls_039">Chinese   traditional   culture   through</span></div>
+<div style="position:absolute;left:57.14px;top:318.93px" class="cls_039"><span class="cls_039">architecture, folk art, foods,  especially of</span></div>
+<div style="position:absolute;left:57.14px;top:336.93px" class="cls_039"><span class="cls_039">the natives’ lives in the lands that I have</span></div>
+<div style="position:absolute;left:57.14px;top:354.93px" class="cls_039"><span class="cls_039">set foot.</span></div>
+<div style="position:absolute;left:57.14px;top:375.77px" class="cls_039"><span class="cls_039">Tis is a long-term project with about 400</span></div>
+<div style="position:absolute;left:57.14px;top:393.77px" class="cls_039"><span class="cls_039">selected photos. I will summarize the</span></div>
+<div style="position:absolute;left:57.14px;top:411.77px" class="cls_039"><span class="cls_039">main sections and content of the project</span></div>
+<div style="position:absolute;left:57.14px;top:429.77px" class="cls_039"><span class="cls_039">in this portfolio.</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">18</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1201.58px;top:777.54px" class="cls_006"><span class="cls_006">19</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-624px;top:8505px;width:1248px;height:816px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background11.jpg" width=1248 height=816></div>
+<div style="position:absolute;left:47.00px;top:60.03px" class="cls_046"><span class="cls_046">According to my observations in</span></div>
+<div style="position:absolute;left:47.00px;top:78.03px" class="cls_046"><span class="cls_046">Dali, and Lijiang, domestic tourism</span></div>
+<div style="position:absolute;left:47.00px;top:96.03px" class="cls_046"><span class="cls_046">is  quite  developed  but  it’s  still</span></div>
+<div style="position:absolute;left:47.00px;top:114.03px" class="cls_046"><span class="cls_046">unfamiliar with foreign tourists.</span></div>
+<div style="position:absolute;left:47.00px;top:132.03px" class="cls_046"><span class="cls_046">Most people don’t speak English.</span></div>
+<div style="position:absolute;left:47.00px;top:150.03px" class="cls_046"><span class="cls_046">In order to talk and understand the</span></div>
+<div style="position:absolute;left:47.00px;top:168.03px" class="cls_046"><span class="cls_046">locals, we had to learn the the most</span></div>
+<div style="position:absolute;left:47.00px;top:186.03px" class="cls_046"><span class="cls_046">usual Chinese phrases.</span></div>
+<div style="position:absolute;left:47.00px;top:213.03px" class="cls_046"><span class="cls_046">In   Dali   Old   Town,   we   got</span></div>
+<div style="position:absolute;left:47.00px;top:231.03px" class="cls_046"><span class="cls_046">acquainted   with   Naxi   ethnic</span></div>
+<div style="position:absolute;left:47.00px;top:249.03px" class="cls_046"><span class="cls_046">people. Some local people are very</span></div>
+<div style="position:absolute;left:47.00px;top:267.03px" class="cls_046"><span class="cls_046">open  mind  with  visitors.  Tey</span></div>
+<div style="position:absolute;left:47.00px;top:285.03px" class="cls_046"><span class="cls_046">showed us cultural characteristics</span></div>
+<div style="position:absolute;left:47.00px;top:303.03px" class="cls_046"><span class="cls_046">in their costumes and local dishes.</span></div>
+<div style="position:absolute;left:638.25px;top:457.62px" class="cls_046"><span class="cls_046">However,   some   other</span></div>
+<div style="position:absolute;left:638.25px;top:475.62px" class="cls_046"><span class="cls_046">people did not welcome</span></div>
+<div style="position:absolute;left:638.25px;top:493.62px" class="cls_046"><span class="cls_046">us. Tey react negatively</span></div>
+<div style="position:absolute;left:638.25px;top:511.62px" class="cls_046"><span class="cls_046">to the camera and brush</span></div>
+<div style="position:absolute;left:638.25px;top:529.62px" class="cls_046"><span class="cls_046">our  presence  off.  Tey</span></div>
+<div style="position:absolute;left:638.25px;top:547.62px" class="cls_046"><span class="cls_046">think that the arrival of</span></div>
+<div style="position:absolute;left:638.25px;top:565.62px" class="cls_046"><span class="cls_046">visitors  will  upset  their</span></div>
+<div style="position:absolute;left:638.25px;top:583.62px" class="cls_046"><span class="cls_046">current lives.</span></div>
+<div style="position:absolute;left:32.98px;top:777.54px" class="cls_006"><span class="cls_006">20</span></div>
+<div style="position:absolute;left:64.44px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1079.11px;top:778.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1201.58px;top:777.54px" class="cls_006"><span class="cls_006">21</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:9331px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background12.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:812.50px;top:48.11px" class="cls_054"><span class="cls_054">Young people, especially college students, welcome our</span></div>
+<div style="position:absolute;left:812.50px;top:64.91px" class="cls_054"><span class="cls_054">presence in their cultural exchange programs.</span></div>
+<div style="position:absolute;left:812.50px;top:90.71px" class="cls_054"><span class="cls_054">At Guangxi University, we learned about traditional</span></div>
+<div style="position:absolute;left:812.50px;top:107.51px" class="cls_054"><span class="cls_054">Chinese arts: Chinese Calligraphy, drawing Beijing</span></div>
+<div style="position:absolute;left:812.50px;top:124.31px" class="cls_054"><span class="cls_054">Opera masks, cutting Chinese wind paper.</span></div>
+<div style="position:absolute;left:669.00px;top:690.06px" class="cls_054"><span class="cls_054">Nowadays, visitors are interested in ancient things and</span></div>
+<div style="position:absolute;left:669.00px;top:706.86px" class="cls_054"><span class="cls_054">they are attracted by the ancient citadels. Although</span></div>
+<div style="position:absolute;left:669.00px;top:723.66px" class="cls_054"><span class="cls_054">tourism brings more and more benefits for locals, it</span></div>
+<div style="position:absolute;left:669.00px;top:740.46px" class="cls_054"><span class="cls_054">imports also new cultural habits into these areas. Some</span></div>
+<div style="position:absolute;left:669.00px;top:757.26px" class="cls_054"><span class="cls_054">developing towns coped well with these impacts. But I</span></div>
+<div style="position:absolute;left:669.00px;top:774.06px" class="cls_054"><span class="cls_054">wonder that in the future, could local people still retain</span></div>
+<div style="position:absolute;left:669.00px;top:790.86px" class="cls_054"><span class="cls_054">all the pure culture in the integrative context?</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">22</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1168.56px;top:826.54px" class="cls_006"><span class="cls_006">23</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:10206px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background13.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:766.33px;top:512.41px" class="cls_052"><span class="cls_052">Project 2</span></div>
+<div style="position:absolute;left:766.33px;top:544.41px" class="cls_044"><span class="cls_044">THAILAND:</span></div>
+<div style="position:absolute;left:766.33px;top:588.40px" class="cls_044"><span class="cls_044">“ BEAUTY FOR SALE”</span></div>
+<div style="position:absolute;left:770.49px;top:642.00px" class="cls_055"><span class="cls_055">LGBT is always a sensitive topic in the Asian countries.</span></div>
+<div style="position:absolute;left:770.49px;top:658.80px" class="cls_055"><span class="cls_055">However, Tailand - a Southeast Asia country, is very open</span></div>
+<div style="position:absolute;left:770.49px;top:675.60px" class="cls_055"><span class="cls_055">mind about this issue and is considered as one of the leading</span></div>
+<div style="position:absolute;left:770.49px;top:692.40px" class="cls_055"><span class="cls_055">countries in transsexual surgery technology.</span></div>
+<div style="position:absolute;left:770.49px;top:712.03px" class="cls_055"><span class="cls_055">My project does not exploit the right or wrong views about</span></div>
+<div style="position:absolute;left:770.49px;top:728.83px" class="cls_055"><span class="cls_055">homosexuals. Tese photos provide my personal opinion</span></div>
+<div style="position:absolute;left:770.49px;top:745.63px" class="cls_055"><span class="cls_055">about the way the Tai government using  beauty  and</span></div>
+<div style="position:absolute;left:770.49px;top:762.43px" class="cls_055"><span class="cls_055">transgender people as business tools and the vicious circle</span></div>
+<div style="position:absolute;left:770.49px;top:779.23px" class="cls_055"><span class="cls_055">that transgenders are facing.</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">24</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1168.56px;top:826.54px" class="cls_006"><span class="cls_006">25</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-607px;top:11081px;width:1214px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background14.jpg" width=1214 height=865></div>
+<div style="position:absolute;left:56.00px;top:336.91px" class="cls_052"><span class="cls_052">Project 3</span></div>
+<div style="position:absolute;left:56.00px;top:368.91px" class="cls_044"><span class="cls_044">HANOI IN</span></div>
+<div style="position:absolute;left:56.00px;top:412.90px" class="cls_044"><span class="cls_044">AUTUMN</span></div>
+<div style="position:absolute;left:56.23px;top:471.00px" class="cls_055"><span class="cls_055">Tose pictures depict the changes in space and time during</span></div>
+<div style="position:absolute;left:56.23px;top:487.80px" class="cls_055"><span class="cls_055">the season changing moment.</span></div>
+<div style="position:absolute;left:56.23px;top:507.43px" class="cls_055"><span class="cls_055">Unlike  the  gloomy  winter,  the  noisy  summer,  or  the</span></div>
+<div style="position:absolute;left:56.23px;top:524.23px" class="cls_055"><span class="cls_055">dreaminess spring, Hanoi’s autumn brings a gentle serenity</span></div>
+<div style="position:absolute;left:56.23px;top:541.03px" class="cls_055"><span class="cls_055">and very charming in an extraordinary way.</span></div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">26</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1046.09px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+<div style="position:absolute;left:1168.56px;top:826.54px" class="cls_006"><span class="cls_006">27</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-309px;top:11956px;width:619px;height:865px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="261cb838-2cdc-11ea-a5fd-0cc47a792c0a_id_261cb838-2cdc-11ea-a5fd-0cc47a792c0a_files/background15.jpg" width=619 height=865></div>
+<div style="position:absolute;left:150.00px;top:274.33px" class="cls_056"><span class="cls_056">thank you</span></div>
+<div style="position:absolute;left:254.80px;top:691.97px" class="cls_057"><span class="cls_057">CONTACT ME</span></div>
+<div style="position:absolute;left:212.05px;top:717.03px" class="cls_058"><span class="cls_058">E. ptt.huong.8895@gmail.com</span></div>
+<div style="position:absolute;left:253.10px;top:741.03px" class="cls_058"><span class="cls_058">T. +84 916 521 532</span></div>
+<div style="position:absolute;left:192.63px;top:765.03px" class="cls_058"><span class="cls_058">W. </span><A HREF="http://www.leomemory.wordpress.com/">www.leomemory.wordpress.com</A> </div>
+<div style="position:absolute;left:32.98px;top:826.54px" class="cls_006"><span class="cls_006">28</span></div>
+<div style="position:absolute;left:64.44px;top:827.89px" class="cls_007"><span class="cls_007">Pham Ti Tu Huong</span></div>
+</div>
+
+</body>
+</html>
